@@ -43,5 +43,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
   }
 
-  showList(strangeArray.filter(filtrarPorString).sort());
+  showList(strangeArray.filter(filtrarPorString).sort((a,b) => a.localeCompare(b, "es", {ignorePunctuation: true})));
 });
